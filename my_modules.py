@@ -1,4 +1,4 @@
-print('Imported my_module....')
+print('Importing my_module....')
 
 test = 'test string'
 
