@@ -10,7 +10,7 @@ print(present) # prints the date formatted
 
 print(present.weekday()) # prints the day number in the week starting with 0 as monday
 print(present.isoweekday()) # prints the day number in the week starting with 1 as monday
-print(today + delta) # prints the number of days / time will pass which is listed in the arguements
+print(today + delta) # prints the day which will com after the number of days / time passed which is listed in the arguements
 print(delta.total_seconds())
 
 print(calendar.isleap(today.year)) # prints if the year is leap or not : boolean type
