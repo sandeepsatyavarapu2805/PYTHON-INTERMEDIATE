@@ -4,13 +4,11 @@ class CombustionEngine:
     def spark(self) -> str:
         return "vroom vroom"
 
-
 # Composed Object 2
 class ElectricMotor:
 
     def spark(self) -> str:
         return "silent hum"
-
 
 # Unified Class using Composition
 class Car:
@@ -22,7 +20,6 @@ class Car:
     def drive(self) -> str:
         # Polymorphism: Calls .spark() regardless of the object type passed in
         return f"{self.model} goes {self.engine.spark()}"
-
 
 # --- Execution ---
 print("--- Group 4: Composition & Polymorphism ---")

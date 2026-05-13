@@ -19,7 +19,6 @@ class BankAccount:
         else:
             self.__balance = amount
 
-
 # --- Execution ---
 print("--- Group 2: Encapsulation & Properties ---")
 account = BankAccount("Alice", 1000.0)

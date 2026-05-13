@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-
 # 1. Abstraction: Defining a blueprint template
 class Vehicle(ABC):
 
@@ -19,12 +18,10 @@ class ElectricCar(Vehicle):
     def start_engine(self) -> str:
         return f"{self.brand} silent motor started smoothly."
 
-
 class Truck(Vehicle):
 
     def start_engine(self) -> str:
         return f"{self.brand} heavy diesel engine roars to life."
-
 
 # --- Execution ---
 print("--- Group 3: Abstraction & Inheritance ---")

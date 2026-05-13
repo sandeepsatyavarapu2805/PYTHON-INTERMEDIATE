@@ -1,6 +1,5 @@
 import functools
 
-
 # 1. Closure: A function that remembers variables from its outer scope
 def power_factory(exponent):
     def calculate(base):
@@ -8,7 +7,6 @@ def power_factory(exponent):
         return base**exponent
 
     return calculate
-
 
 # 2. Decorator: A closure that accepts and alters a function
 def log_result(func):
@@ -19,7 +17,6 @@ def log_result(func):
         return result
 
     return wrapper
-
 
 # --- Execution ---
 print("--- Group 1: Closures & Decorators ---")
@@ -37,7 +34,6 @@ _ = decorated_square(10)
 @log_result
 def add(a, b):
     return a + b
-
 
 _ = add(3, 7)
 print()
