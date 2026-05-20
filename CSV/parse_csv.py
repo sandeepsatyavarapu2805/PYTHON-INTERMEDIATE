@@ -1,8 +1,13 @@
-import csv
+import csv, os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+names_filepath = os.path.join(BASE_DIR, 'names.csv')
+new_names_filepath = os.path.join(BASE_DIR, 'names_new.csv')
 
 # using normal reader and writer of CSV
-with open('names.csv', 'r', newline='') as f, \
-     open('names_new.csv', 'w', newline='') as nf:
+with open(names_filepath, 'r', newline='') as f, \
+     open(new_names_filepath, 'w', newline='') as nf:
 
     reader = csv.reader(f)
     print(reader) # we need to iterate it . its just an object which just points and does not open it benefits large files
@@ -19,8 +24,8 @@ with open('names.csv', 'r', newline='') as f, \
 
 
 # using dict reader and writer for CSV files
-with open('names.csv','r', newline='') as f, \
-     open('names_new.csv','w', newline='') as nf:
+with open(names_filepath,'r', newline='') as f, \
+     open(new_names_filepath,'w', newline='') as nf:
     
     reader_dict = csv.DictReader(f) # it formats the everything in the file into dictionary with keys as the file headers for every info
 
