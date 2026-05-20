@@ -1,6 +1,10 @@
+import os
 from bs4 import BeautifulSoup
 
-with open(r'WEB SCRAPING/website.html','r') as f:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, 'website.html')
+
+with open(file_path,'r') as f:
     soup = BeautifulSoup(f,'lxml')
 
 '''
