@@ -1,42 +1,17 @@
 import json, os
 
-people_string = '''
-{
-    "people": [
-        {
-            "name": "John Smith",
-            "phone": "615-555-7164",
-            "emails": [
-                "johnsmith@bogusemail.com",
-                "john.smith@work-place.com"
-            ],
-            "has_license": false
-        },
-        {
-            "name": "Jane Doe",
-            "phone": "560-555-5153",
-            "emails": null,
-            "has_license": true
-        }
-    ]
-}
-'''
-
-data = json.loads(people_string)
-print(data)
-print(type(data))
-print(type(data['people']))
-print()
-
-for person in data['people']:
-    print(person['name'])
-    person.pop('phone')
-    
-new_string = json.dumps(data, indent=2, sort_keys= True)
-print(type(new_string))
-print(new_string)
+# the dump and load work with json files
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(BASE_DIR, 'states.json')
 
-print(os.path.abspath(__file__))
+with open(file_path, 'r') as f:
+    data = json.load(f)
+
+for state in data['states']:
+    print(state['name'], state['abbreviation'])
+    state.pop('area_codes')
+
+file_path = os.path.join(BASE_DIR, 'new_states.json')
+with open(file_path, 'w') as f:
+    json.dump(data, f, indent=2, sort_keys=True) # this dump takes a file pointer as an arguement
