@@ -1,0 +1,9 @@
+2026-05-21 17:16:10,163 : INFO : root : Created Employee: John - Smith
+2026-05-21 17:16:10,163 : INFO : root : Created Employee: Corey - Schafer
+2026-05-21 17:16:10,163 : INFO : root : Created Employee: Jane - Doe
+2026-05-21 17:34:53,858 : INFO : __main__ : Created Employee: John - Smith
+2026-05-21 17:34:53,858 : INFO : __main__ : Created Employee: Corey - Schafer
+2026-05-21 17:34:53,859 : INFO : __main__ : Created Employee: Jane - Doe
+2026-05-21 18:28:25,964 : INFO : __main__ : Created Employee: John - Smith
+2026-05-21 18:28:25,964 : INFO : __main__ : Created Employee: Corey - Schafer
+2026-05-21 18:28:25,965 : INFO : __main__ : Created Employee: Jane - Doe

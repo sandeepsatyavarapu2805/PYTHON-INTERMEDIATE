@@ -1,16 +1,16 @@
-# Composed Object 1
+# Object 1
 class CombustionEngine:
 
     def spark(self) -> str:
         return "vroom vroom"
 
-# Composed Object 2
+# Object 2
 class ElectricMotor:
 
     def spark(self) -> str:
         return "silent hum"
 
-# Unified Class using Composition
+# Class using Composition
 class Car:
 
     def __init__(self, model: str, propulsion_system):
@@ -21,7 +21,6 @@ class Car:
         # Polymorphism: Calls .spark() regardless of the object type passed in
         return f"{self.model} goes {self.engine.spark()}"
 
-# --- Execution ---
 print("--- Group 4: Composition & Polymorphism ---")
 
 gas_car = Car("Mustang", CombustionEngine())

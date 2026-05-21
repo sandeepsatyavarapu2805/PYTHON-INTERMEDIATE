@@ -33,7 +33,12 @@ _ = decorated_square(10)
 # Applying the decorator using @ syntax
 @log_result
 def add(a, b):
+    '''This function adds two numbers'''
     return a + b
 
 _ = add(3, 7)
 print()
+
+# so functools wrap help the add function which points wrapper since decorated to retain its properties again
+print(add.__name__)
+print(add.__doc__)

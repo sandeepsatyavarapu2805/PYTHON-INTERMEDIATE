@@ -23,7 +23,6 @@ class Truck(Vehicle):
     def start_engine(self) -> str:
         return f"{self.brand} heavy diesel engine roars to life."
 
-# --- Execution ---
 print("--- Group 3: Abstraction & Inheritance ---")
 
 # Cannot instantiate an abstract class directly
@@ -32,7 +31,7 @@ try:
 except TypeError:
     print("[SUCCESS] Cannot instantiate abstract class Vehicle directly.")
 
-# Instantiating concrete children
+# Instantiating children
 tesla = ElectricCar("Tesla")
 scania = Truck("Scania")
 
