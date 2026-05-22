@@ -1,4 +1,8 @@
-print('Importing my_module....')
+print(f'Importing {__name__}....')
+# in this file if run print we get __main__ as output
+
+def main():
+    print(__name__)
 
 test = 'test string'
 
@@ -9,3 +13,7 @@ def find_index(search, target):
             return i
 
     return -1
+
+# so this line executes only if the file is running directly if its being imported the code below this line does not run
+if __name__ == '__main__' :
+    main()
