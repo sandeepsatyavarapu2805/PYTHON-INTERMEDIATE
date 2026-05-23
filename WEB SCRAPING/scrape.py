@@ -1,14 +1,16 @@
 # this code can be executed when the coreyms.com website is working
 
 from bs4 import BeautifulSoup
-import requests, csv
+import requests, csv, os
 
 source = requests.get('http://coreyms.com').text
 soup = BeautifulSoup(source, 'lxml')
 
 articles = soup.find_all('article')
 
-csv_file = open('web_text.csv','w')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, 'web_text.csv')
+csv_file = open(file_path,'w')
 
 csv_writer = csv.writer(csv_file)
 csv_writer.writerow(['headline', 'summary', 'video_link'])
