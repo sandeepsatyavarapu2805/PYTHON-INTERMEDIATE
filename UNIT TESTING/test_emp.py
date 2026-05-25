@@ -54,6 +54,7 @@ class TestEmp(unittest.TestCase):
 
     def test_monthly_schedule(self):
         with patch('employee_class.requests.get') as mocked_get:
+            
             mocked_get.return_value.ok = True
             mocked_get.return_value.text = 'Success'
 
