@@ -14,4 +14,4 @@ subprocess.run(command2, shell=True) # without capture_output it does not store 
 # so we can use returncode for knowing if the run got an error(numbers other than 0) and no error(0)
 # we use stderr for returning the error we got for this alternatively ' check=True is used '
 
-# grp and -n are used in commands along with a word to search which takes imput=(retrn of previous subprocess.stdout)
+# grp and -n are used in commands along with a word to search which takes imput=(return of previous subprocess.stdout)

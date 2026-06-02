@@ -11,6 +11,8 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
     secs = [5, 4, 3, 2, 1]
     results = executor.map(do_something, secs) # so this returns the return value and waits to print till the first is fully executed
 
+    for result in results:
+        print(result)
     # this returns a future object which runs when and does not print the retuen statement until it reaches f.result
     '''
     result = [executor.submit(do_something, sec) for sec in secs]
