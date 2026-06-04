@@ -15,7 +15,7 @@ class Open_File:
         self.file.close()
 
         if exc_type is not None:
-            print(f"[Error Logged]")
+            print("[Error Logged]")
             print(f"Type: {exc_type.__name__}")
             print(f"Message: {exc}")
 

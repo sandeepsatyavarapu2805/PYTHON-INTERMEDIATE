@@ -1,7 +1,9 @@
 # this code can be executed when the coreyms.com website is working
 
 from bs4 import BeautifulSoup
-import requests, csv, os
+import requests
+import csv
+import os
 
 source = requests.get('http://coreyms.com').text
 soup = BeautifulSoup(source, 'lxml')
@@ -26,7 +28,7 @@ for article in articles:
 
         vid_link = f'https://youtube.com/watch?{vid_id}'
 
-    except Exception as e:
+    except Exception:
         vid_link = None
 
     print(vid_link)

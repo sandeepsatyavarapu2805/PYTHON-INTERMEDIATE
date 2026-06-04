@@ -1,5 +1,6 @@
 # this is just for practice and we do not use multiprocessing for I/O bound processes but for CPU bound processes
-import multiprocessing, time
+import multiprocessing
+import time
 
 def do_something(seconds):
     print(f"Sleeping {seconds} second(s)...")

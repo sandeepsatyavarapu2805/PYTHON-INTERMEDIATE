@@ -1,4 +1,5 @@
-import logging, os
+import logging
+import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 filepath = os.path.join(BASE_DIR, 'test.log')

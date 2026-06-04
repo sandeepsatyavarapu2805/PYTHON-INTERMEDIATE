@@ -1,4 +1,5 @@
-import sys, os
+import sys
+import os
 from my_modules import find_index as fi, test as t
 #import my_modules as mm then we can use mm.find_index()
 

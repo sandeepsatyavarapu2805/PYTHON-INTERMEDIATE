@@ -1,4 +1,5 @@
-import json, requests
+import json
+import requests
 
 '''
 so you can use this but requests module is better

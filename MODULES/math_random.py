@@ -1,4 +1,5 @@
-import math, random # for random for every run the output is not same it is random
+import math
+import random # for random for every run the output is not same it is random
 
 courses = ['History','Math','Physics','Chemistry']
 greetings = ['Hi','Hello!','Good Morning','Hey','Hola']

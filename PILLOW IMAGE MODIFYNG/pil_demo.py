@@ -1,5 +1,5 @@
 from pathlib import Path
-from PIL import Image, ImageFilter
+from PIL import Image
 
 BASE_DIR = Path(__file__).resolve().parent
 PNG_DIR = BASE_DIR / "PNGS"
@@ -54,10 +54,11 @@ for img_path in BASE_DIR.rglob("*.jpg"):
         print(f"Failed to process {img_path.name}: {e}")
 
 '''
+from PIL import ImageFilter
 
 # you can also do this for images
 i.rotate(90)
 i.convert(mode='L') # this converts the image into black and white
-i.filter(ImageFilter.GaussianBlur(15)) # it blurs the image to the set radius
+i.filter(ImageFilter.GaussianBlur(15)) # it blurs the image to the set radius use the import for this function
 
 '''

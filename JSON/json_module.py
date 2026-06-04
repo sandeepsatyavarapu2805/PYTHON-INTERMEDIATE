@@ -1,4 +1,5 @@
-import json, os
+import json
+import os
 
 # the dump and load work with json files
 

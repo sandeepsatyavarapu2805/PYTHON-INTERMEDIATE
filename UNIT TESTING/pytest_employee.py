@@ -8,7 +8,7 @@ current_file_directory = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(current_file_directory)
 
 # 2. Now you can safely import your module from anywhere
-from employee_class import Employee
+from employee_class import Employee  # noqa: E402
 
 # --- YOUR FIXTURES ---
 @pytest.fixture(scope="module", autouse=True)
